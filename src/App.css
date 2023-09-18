@@ -1,0 +1,125 @@
+
+@font-face {
+  font-family: 'Remine Fares Med'; /* El nombre de la fuente */
+  src: url('./components//assets//fonts//Remine\ Fares.otf') format('truetype'); /* Ruta a la fuente en tu carpeta de assets */
+}
+
+body {
+  font-family: 'Remine Fares Med', sans-serif; /* Aplica la fuente a todo el cuerpo de la página */
+}
+
+
+.navbar{
+  width: 100%;
+  height: 15vh;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-inside-navbar{
+  position: relative;
+  width: 98vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 25vw;
+  height: 10vh;
+  margin-left: 1vw;
+  border: black solid 1px;
+}
+
+.logo {
+  position: inherit;
+  max-width: 25vw;
+  max-height: 20vh;
+  box-sizing: border-box;
+  border: blue solid 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu{
+  width: 60vw;
+  border: blueviolet solid 1px;
+  font-size: medium;
+}
+
+:root {
+  --cream: #f8e1ad;
+  --pink: #fc14a8;
+  --purple: #7103a6;
+  --white: #fefefe;
+  --dark-grey: #3A4750;
+  --black-grey: #303841;
+  --black: #121212;
+}
+
+
+.options-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  font-size: larger;
+  font-weight: bold;
+}
+.main-container{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: black;
+  padding: 0;
+  margin: 0;
+}
+.main-container-text{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  font-size: x-large;
+  font-weight: bold;
+  
+}
+.wavy-div {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  height: 70vh; /* Ajusta la altura según tus necesidades */
+  position:relative;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-background {
+  
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  background-repeat: no-repeat; /* Evita la repetición del fondo */
+  width: 100%;
+  height: 100%; /* Ajusta la altura según sea necesario */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Coloca el fondo detrás del carrusel */
+}
+
+
+
+
