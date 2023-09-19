@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --cream: #f8e1ad;
   --pink: #fc14a8;
@@ -44,6 +48,45 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 30vw;
+}
+button {
+  font-size: 18px;
+  color: #000000;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: var(--pink);
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--purple);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 .options-menu{
   display: flex;
@@ -242,25 +285,62 @@ body {
 }
 
 /*third section*/
+.grid-container{
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
 .parent {
-display: grid;
-grid-template-columns: repeat(6, 1fr);
-grid-template-rows: repeat(6, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 20px;
-}
-
-.div1 { 
-  grid-area: 1 / 1 / 4 / 3; 
-}
-.div2 { 
-  grid-area: 1 / 3 / 4 / 7; 
-}
-.div3 { 
-  grid-area: 4 / 1 / 7 / 5; 
-}
-.div4 { 
-  grid-area: 4 / 5 / 7 / 7; 
-}
-
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 80vw;
+  height: 70vh;
+  justify-content: center;
+  margin-top: 10%;
+  }
+  
+  .div1 { 
+    grid-area: 1 / 4 / 7 / 7; 
+    background-image: url('https://blvckhair.com/cdn/shop/products/Main_2_2ed24c67-4160-4ada-a9a9-8bffddba3ea7_1080x.jpg?v=1667650278');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+    color: white;
+  }
+  .div1 h1{
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  .div2 { 
+    grid-area: 1 / 1 / 5 / 4; 
+    background-image: url('https://www.shopbeautydepot.com/cdn/shop/products/bobbi-boss-braiding-hair-bobbi-boss-jumbo-braid-feather-tip-pre-stretched-54-15021128810582_1024x1024.jpg?v=1628333831');
+    background-size: contain;
+    background-repeat: no-repeat ;
+    background-position: center;
+  }
+  .div2 h1{
+    line-height: 2;
+    font-weight: bold;
+    font-size: xxx-large;
+  }
+  .div3 { 
+    grid-area: 5 / 1 / 7 / 4; 
+    background-image: url('https://images.pexels.com/photos/210659/pexels-photo-210659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+  }
+  .div3 h1{
+    margin-left: 3%;
+  }
 
