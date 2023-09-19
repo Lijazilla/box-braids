@@ -1,0 +1,23 @@
+.first-image{
+    box-sizing: border-box;
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.second-image{
+    object-fit: cover;
+    width: 110vh;
+    height: 90vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.third-image{
+    object-fit: cover;
+    box-sizing: border-box;
+    width: 50vw;
+    
+}
+.fourth-image{
+    object-fit: cover;
+}
