@@ -12,14 +12,12 @@ html {
   --black: #121212;
 }
 
-@font-face {
-  font-family: 'Remine Fares Med'; /* El nombre de la fuente */
-  src: url('./components//assets//fonts//Remine\ Fares.otf') format('truetype'); /* Ruta a la fuente en tu carpeta de assets */
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Poppins:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+
 body {
-  font-family: Open Sans, sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    overflow-x: hidden;
     line-height: 1.4em;
 }
 .navbar{
@@ -49,9 +47,9 @@ body {
   justify-content: space-between;
   width: 30vw;
 }
-button {
+.nav-button {
   font-size: 18px;
-  color: #000000;
+  color: var(--pink);
   font-family: inherit;
   font-weight: 800;
   cursor: pointer;
@@ -64,18 +62,18 @@ button {
   transition-property: color;
 }
 
-button:focus,
-button:hover {
-  color: var(--pink);
+.nav-button:focus,
+.nav-button:hover {
+  color: var(--purple);
 }
 
-button:focus:after,
-button:hover:after {
+.nav-button:focus:after,
+.nav-button:hover:after {
   width: 100%;
   left: 0%;
 }
 
-button:after {
+.nav-button:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
@@ -88,6 +86,7 @@ button:after {
   transition-duration: 400ms;
   transition-property: width, left;
 }
+
 .options-menu{
   display: flex;
   flex-direction: row;
@@ -166,7 +165,38 @@ button:after {
   align-items: end;
   height: fit-content;
 }
+
+/* second container */
+.second-container{
+  top: 15vh;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+.second-container p{
+  color: var(--black);
+}
+.second-container h1{
+  color: var(--black);
+}
+.inside-second-container{
+  width: 95vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;  
+  overflow: hidden;
+}
+
 .button2 {
+  margin-top: 3vh;
   display: inline-block;
   transition: all 0.2s ease-in;
   position: relative;
@@ -196,7 +226,7 @@ button:after {
   top: 100%;
   width: 140%;
   height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(74, 74, 74, 0.05);
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -230,34 +260,6 @@ button:after {
   background-color: #009087;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-/* second container */
-.second-container{
-  top: 15vh;
-  width: 100%;
-  height: 90vh;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  overflow: hidden;
-  background: var(--black)
-}
-.second-container p{
-  color: var(--white);
-}
-.second-container h1{
-  color: var(--white);
-}
-.inside-second-container{
-  width: 95vw;
-  height: 80vh;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;  
-  overflow: hidden;
-}
 .carousel-background {
   background-size: cover; /* Ajusta el tamaño del fondo */
   background-repeat: no-repeat; /* Evita la repetición del fondo */
@@ -273,15 +275,23 @@ button:after {
   height: 80vh;
 }
 .myself-description{
-  box-sizing: border-box;
+  position: relative;
   width: 40vw;
-  height: 70vh;
+  height: 75vh;
   border-radius: 12px;
-  object-fit: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .myself-description h1{
   font-size: 34px;
-  font-weight: bold;
+  font-weight: 700;
+}
+.myself-description p{
+  font-weight: 300;
+  font-size: 22px;
 }
 
 /*third section*/
@@ -298,7 +308,7 @@ button:after {
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  width: 80vw;
+  width: 95vw;
   height: 70vh;
   justify-content: center;
   margin-top: 10%;
@@ -311,10 +321,12 @@ button:after {
     background-repeat: no-repeat ;
     background-position: center;
     color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
   }
   .div1 h1{
     margin-left: 5%;
-    font-weight: bold;
+    font-weight: 600;
     font-size: xx-large;
   }
   .div2 { 
@@ -323,11 +335,13 @@ button:after {
     background-size: contain;
     background-repeat: no-repeat ;
     background-position: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
   }
   .div2 h1{
-    line-height: 2;
-    font-weight: bold;
-    font-size: xxx-large;
+    line-height: 1.5;
+    font-weight: 600;  
+    font-size: xxx-large;  
   }
   .div3 { 
     grid-area: 5 / 1 / 7 / 4; 
@@ -339,8 +353,89 @@ button:after {
     display: flex;
     justify-content: left;
     align-items: end;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
   }
   .div3 h1{
     margin-left: 3%;
+    font-weight: 600;
   }
+
+  /*bottom*/
+
+.bottom-section{
+  margin-top: 5%;
+  background: var(--black);
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 10%;
+}
+.bottom-section h1{
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 600 bold;
+
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
 
