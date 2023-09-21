@@ -440,7 +440,7 @@ body {
   fill: #c13584;
 }
 
-/*Mobile section*/
+/*Mobile section///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 767px) {
 .first-menu, .second-menu {
@@ -650,7 +650,7 @@ input:checked + div span.line-2 {
   width: 95%;
   height: 900px;
   justify-content: center;
-  top: 85%;
+  top: 200%;
   }
   
   .div1 { 
@@ -709,7 +709,7 @@ input:checked + div span.line-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 320vh;
+    top: 330vh;
     gap: 0%;
     height: 150px;
   }
