@@ -15,7 +15,7 @@ const Carousel = () => {
     return (
         <Slider {...settings} >
             <div className='carousel-div'>
-                <img src='https://i.imgur.com/rjw6pQP.jpg' alt="Imagen 1"/>
+                <img src='https://i.imgur.com/ROQIL1j.jpg' alt="Imagen 1"/>
             </div>
             <div className='carousel-div'>
                 <img src='https://i.imgur.com/CJuZHvS.jpg' alt="Imagen 2"/>

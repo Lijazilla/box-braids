@@ -100,10 +100,14 @@ function App() {
           </div>
 
           <div className='myself-description' id='about'>
+              <div className='carousel-for-mobile'>
+                <Carousel/>
+              </div>
               <h1>Soy Yamili Eunice Gonzalez</h1>
               <p>Soy Estilista Profesional con 20 años de experiencia</p>
-              <p>Especialista en Braider (trenzadora) y aplicaciones Artezanales con Extensión <br/>
-                Además ofrezco cursos y capacitaciones para que lo ofrezcas.
+              <p>Especialista en Braider (trenzadora) y aplicaciones Artezanales con Extensión.<br/>
+                Además ofrezco cursos y capacitaciones para <br/>
+                que desarrolles tu propio negocio.
               </p>
               
                 <a href="https://wa.me/+525578029544" class="button2" target="_blank" rel='noreferrer'>
@@ -123,9 +127,7 @@ function App() {
             <h1>Servicio de Curly Hair Kanekalon</h1>
           </div>
           <div class="div2">
-            <h1>Servicio <br/> 
-                de <br/>
-                Crochet</h1>
+            <h1>Servicio <br/>de <br/> Crochet</h1>
           </div>
           <div class="div3">
             <h1>Servicio de Dreadlocks</h1>
@@ -134,7 +136,7 @@ function App() {
       </section>
 
       <section className='bottom-section' id='contact'>
-            <h1>Contacto</h1>
+            <h1>Mis Redes Sociales</h1>
             <div class="social-buttons">
                 <a href="https://www.facebook.com/yamili.gonzalez.779?mibextid=ZbWKwL" class="social-button facebook" target='blank'>
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" >

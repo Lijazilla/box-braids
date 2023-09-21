@@ -6,9 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     left: 0;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
   
   .carousel-div img {
@@ -18,4 +17,20 @@
     max-height: 100%;
     object-fit: cover;
     box-sizing: border-box;
+  }
+  @media screen and (max-width: 767px) {
+    .carousel-div{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      width: 100%;
+      height: 374px;
+      position: relative;
+      
+    }
+    .carousel-div img {
+      width: 100%;
+      height: 100%;
+      
+    }
   }
