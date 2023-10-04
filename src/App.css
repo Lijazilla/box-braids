@@ -410,7 +410,6 @@ body {
   background-color: #f2f2f2;
   box-shadow: 0px 0px 6px 3px #00000027;
 }
-
 .social-buttons svg {
   transition: 0.3s;
   height: 20px;
@@ -485,7 +484,6 @@ body {
   margin: 10%;
   position: absolute;
 }
-
 .switch span {
   background: #fff;
   width: 100%;
@@ -571,7 +569,6 @@ input:checked + div span.line-2 {
   align-items: end;
   height: fit-content;
 }
-
 .second-container{
   top: 1vh;
   width: 100%;
@@ -612,7 +609,6 @@ input:checked + div span.line-2 {
   width: 80%;
   height: 55%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
 }
 .carousel-container{
   display: none;

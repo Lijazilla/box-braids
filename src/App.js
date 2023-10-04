@@ -7,9 +7,8 @@ function App() {
   const [handleResponsiveMenu, setHandleResponsiveMenu] = useState(false);
   const menuRef = useRef(null)
 
-  const toogleResponsiveBarMenu = () => {
+  const toggleResponsiveBarMenu = () => {
     setHandleResponsiveMenu(true);
-
     if (handleResponsiveMenu){
       setHandleResponsiveMenu(false);
     }
@@ -20,6 +19,7 @@ function App() {
       setHandleResponsiveMenu(false);
     }
   };
+
   useEffect(() => {
     // Agregar un event listener para detectar clics en el documento
     document.addEventListener('click', handleClickOutside);
@@ -54,7 +54,7 @@ function App() {
           </div>
 
           {/*Responsive navbar*/}
-          <div className="switch"  onClick={()=> toogleResponsiveBarMenu()} ref={menuRef} >
+          <div className="switch"  onClick={()=> toggleResponsiveBarMenu()} ref={menuRef} >
             <input type="checkbox"/>
             <div>
                 <span className="line-1"></span>
