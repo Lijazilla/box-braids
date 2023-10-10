@@ -106,7 +106,7 @@ function App() {
               <h1>Soy Yamili Eunice Gonzalez</h1>
               <p>Soy Estilista Profesional con 20 años de experiencia</p>
               <p>Especialista en Braider (trenzadora) y aplicaciones Artezanales con Extensión.<br/>
-                Además ofrezco cursos y capacitaciones para <br className='br-just-for-mobile'/>
+                Además ofrezco cursos y capacitaciones para
                 que desarrolles tu propio negocio.
               </p>
               

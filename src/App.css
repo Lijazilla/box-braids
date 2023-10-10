@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 :root {
   --cream: #f8e1ad;
   --pink: #fc14a8;
@@ -14,8 +13,14 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Poppins:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 990px){
   .switch{
+    display: none;
+  }
+  .br-just-for-mobile{
+    display: none;
+  }
+  .carousel-for-mobile{
     display: none;
   }
 }
@@ -25,12 +30,7 @@ body {
     overflow-x: hidden;
     line-height: 1.4em;
 }
-.br-just-for-mobile{
-  display: none;
-}
-.carousel-for-mobile{
-  display: none;
-}
+
 .navbar{
   width: 100%;
   height: 15vh;
