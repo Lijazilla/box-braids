@@ -39,7 +39,7 @@ function App() {
           <div className='first-menu'>
             <ul className='options-menu'>
               <li><a href="#main-container" className="nav-button">Acerca de mi</a></li>
-              <li><a href="#grid-container" className="nav-button">Servicios</a></li>
+              <li><a href="#servicios" className="nav-button">Servicios</a></li>
             </ul>
           </div>
 
@@ -53,7 +53,7 @@ function App() {
             </ul>
           </div>
 
-          {/*Responsive navbar*/}
+          {/* **************************** Responsive navbar***************************************** */}
           <div className="switch"  onClick={()=> toggleResponsiveBarMenu()} ref={menuRef} >
             <input type="checkbox"/>
             <div>
@@ -106,7 +106,7 @@ function App() {
               <h1>Soy Yamili Eunice Gonzalez</h1>
               <p>Soy Estilista Profesional con 20 años de experiencia</p>
               <p>Especialista en Braider (trenzadora) y aplicaciones Artezanales con Extensión.<br/>
-                Además ofrezco cursos y capacitaciones para <br/>
+                Además ofrezco cursos y capacitaciones para <br className='br-just-for-mobile'/>
                 que desarrolles tu propio negocio.
               </p>
               
@@ -123,14 +123,14 @@ function App() {
 
       <section className='grid-container'>
         <div class="parent">
-          <div class="div1" >
+          <div class="div1" id='servicios'>
             <h1>Servicio de Curly Hair Kanekalon</h1>
           </div>
           <div class="div2">
             <h1>Servicio <br/>de <br/> Crochet</h1>
           </div>
           <div class="div3">
-            <h1>Servicio de Dreadlocks</h1>
+            <h1 >Servicio de Dreadlocks</h1>
           </div>
         </div>
       </section>
